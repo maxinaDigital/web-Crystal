@@ -42,7 +42,8 @@
     "directCall": "Llamada directa",
     "howItWorksShort": "¿Cómo funciona?",
     "howItWorksSteps": "1. Llena el formulario con tus datos\n2. Al enviarlo, abrirá WhatsApp con tu solicitud\n3. Nuestro equipo confirma tu cita en minutos",
-    "privacy": "required"
+    "privacy": "required",
+    "faq": "Preguntas frecuentes"
   },
   "hero": {
     "badge": "Clínica privada · Aguascalientes, México",
@@ -82,14 +83,70 @@
     "titleAccent": "especialidades",
     "description": "Todo bajo un mismo techo. Sin referencias ni traslados innecesarios.",
     "items": {
-      "medicina-general": { "name": "Medicina General", "desc": "Consulta médica integral para toda la familia." },
-      "pediatria-neonatologia": { "name": "Pediatría y Neonatología", "desc": "Atención especializada para bebés y niños, con unidad neonatal 24/7." },
-      "ginecologia-obstetricia": { "name": "Ginecología y Obstetricia", "desc": "Control prenatal, partos y cesáreas en quirófanos exclusivos de maternidad." },
-      "cardiologia": { "name": "Cardiología", "desc": "Diagnóstico y tratamiento de enfermedades del corazón y sistema circulatorio." },
-      "cirugia-general": { "name": "Cirugía General", "desc": "Procedimientos quirúrgicos con laparoscopía y mínima invasión." },
-      "nutricion-clinica": { "name": "Nutrición Clínica", "desc": "Planes nutricionales personalizados integrados con el tratamiento médico." },
-      "laboratorio-clinico": { "name": "Laboratorio Clínico", "desc": "Análisis clínicos propios con resultados el mismo día." },
-      "imagenologia": { "name": "Imagenología", "desc": "Ultrasonido y rayos X in situ para diagnóstico inmediato." }
+      "medicina-general": {
+        "name": "Medicina General",
+        "desc": "Consulta médica integral para toda la familia.",
+        "full": "Nuestros médicos generales brindan atención médica completa para pacientes de todas las edades. Desde enfermedades comunes hasta el seguimiento de condiciones crónicas, estamos aquí para cuidar tu salud en cada etapa de la vida.",
+        "conditions": ["Resfriados, gripe y enfermedades respiratorias", "Infecciones y fiebre", "Dolores musculares y articulares", "Control de diabetes e hipertensión", "Revisiones preventivas y chequeos anuales", "Certificados médicos"],
+        "process": [{"title":"Agenda tu cita","desc":"Por WhatsApp, teléfono o nuestro formulario en línea."},{"title":"Consulta médica","desc":"El médico te evalúa, escucha tus síntomas y realiza la exploración física."},{"title":"Diagnóstico y plan","desc":"Recibes tu diagnóstico, tratamiento y las instrucciones de seguimiento."}],
+        "faq": [{"q":"¿Necesito cita previa?","a":"Sí, recomendamos agendar tu cita para reducir tiempos de espera. También atendemos urgencias."},{"q":"¿Cuánto dura una consulta?","a":"Aproximadamente 20–30 minutos dependiendo del motivo de consulta."},{"q":"¿Atienden a niños?","a":"Medicina General atiende a partir de los 12 años. Para menores, contamos con Pediatría."}]
+      },
+      "pediatria-neonatologia": {
+        "name": "Pediatría y Neonatología",
+        "desc": "Atención especializada para bebés y niños, con unidad neonatal 24/7.",
+        "full": "Contamos con 3 quirófanos exclusivos de maternidad y un equipo de pediatras y neonatólogos altamente capacitados para acompañar a tu bebé desde los primeros instantes de vida. Nuestra UCIN brinda atención de primer nivel para recién nacidos que requieren vigilancia especial.",
+        "conditions": ["Atención del recién nacido sano y de riesgo", "Control del niño sano (0–17 años)", "Enfermedades respiratorias pediátricas", "Infecciones y fiebre en niños", "Alergias y dermatitis", "Seguimiento del desarrollo infantil"],
+        "process": [{"title":"Registro prenatal","desc":"Te registramos antes del parto para preparar todo para la llegada de tu bebé."},{"title":"Atención al nacimiento","desc":"Nuestro neonatólogo recibe al bebé en sala de partos o quirófano."},{"title":"Seguimiento y alta","desc":"Revisamos al bebé y te enseñamos los cuidados antes de salir a casa."}],
+        "faq": [{"q":"¿Tienen UCIN?","a":"Sí, contamos con unidad de cuidados neonatales para bebés prematuros o de riesgo."},{"q":"¿Puedo elegir el pediatra que atenderá a mi bebé?","a":"Sí, puedes solicitar un médico de preferencia al registrar tu embarazo con nosotros."},{"q":"¿Qué edad atiende el pediatra?","a":"Desde el nacimiento hasta los 17 años."}]
+      },
+      "ginecologia-obstetricia": {
+        "name": "Ginecología y Obstetricia",
+        "desc": "Control prenatal, partos y cesáreas en quirófanos exclusivos de maternidad.",
+        "full": "Nuestras ginecólogas acompañan a la mujer en cada etapa: desde la adolescencia hasta la menopausia. Con tres quirófanos exclusivos de maternidad y tecnología de imagenología in-house, brindamos atención completa del embarazo, parto y posparto.",
+        "conditions": ["Control prenatal y seguimiento del embarazo", "Parto natural y cesárea programada", "Papanicolaou y detección de cáncer cervical", "Trastornos menstruales", "Anticoncepción y planificación familiar", "Menopausia y climaterio"],
+        "process": [{"title":"Primera consulta","desc":"Evaluación completa, historia clínica y estudios iniciales si son necesarios."},{"title":"Seguimiento prenatal","desc":"Consultas mensuales (o según semana de gestación) con ultrasonido incluido."},{"title":"Parto o cesárea","desc":"Atención en nuestros quirófanos de maternidad con el equipo completo."}],
+        "faq": [{"q":"¿Atienden partos de urgencia?","a":"Sí, contamos con guardia obstétrica las 24 horas para emergencias."},{"q":"¿El ultrasonido obstétrico se hace en la clínica?","a":"Sí, tenemos imagenología propia, no necesitas ir a otro lugar."},{"q":"¿Puedo tener a mi pareja en el parto?","a":"Sí, permitimos acompañante durante el parto vaginal y en la recuperación."}]
+      },
+      "cardiologia": {
+        "name": "Cardiología",
+        "desc": "Diagnóstico y tratamiento de enfermedades del corazón y sistema circulatorio.",
+        "full": "Nuestro cardiólogo realiza evaluaciones completas del sistema cardiovascular, incluyendo electrocardiograma, ecocardiograma y prueba de esfuerzo. El diagnóstico oportuno puede salvar vidas.",
+        "conditions": ["Hipertensión arterial", "Arritmias cardíacas", "Insuficiencia cardíaca", "Dolor en el pecho y palpitaciones", "Control de riesgo cardiovascular", "Seguimiento postinfarto"],
+        "process": [{"title":"Consulta inicial","desc":"Historia clínica, exploración y electrocardiograma en la misma consulta."},{"title":"Estudios complementarios","desc":"Ecocardiograma o prueba de esfuerzo según el caso, en nuestra clínica."},{"title":"Plan de tratamiento","desc":"Ajuste de medicación, cambios en estilo de vida y citas de seguimiento."}],
+        "faq": [{"q":"¿Se hace el ecocardiograma en la clínica?","a":"Sí, lo realizamos con nuestro equipo de imagenología in-house."},{"q":"¿Cuándo debo ir a urgencias cardiológicas?","a":"Ante dolor en el pecho, dificultad para respirar o desmayos, acude de inmediato."},{"q":"¿Cada cuánto me debo checar el corazón?","a":"Se recomienda un chequeo anual a partir de los 40 años o antes si hay factores de riesgo."}]
+      },
+      "cirugia-general": {
+        "name": "Cirugía General",
+        "desc": "Procedimientos quirúrgicos con laparoscopía y mínima invasión.",
+        "full": "Contamos con 2 quirófanos de cirugía general totalmente equipados con tecnología de última generación. Nuestro equipo quirúrgico realiza desde procedimientos menores hasta cirugías de mayor complejidad con estándares de seguridad internacionales.",
+        "conditions": ["Apendicitis", "Hernia inguinal, umbilical y abdominal", "Colecistitis (cálculos en la vesícula)", "Cirugía laparoscópica (mínima invasión)", "Procedimientos cutáneos (quistes, lipomas)", "Cirugía de emergencia"],
+        "process": [{"title":"Valoración preoperatoria","desc":"El cirujano evalúa el caso, indica laboratorios y estudios de imagen necesarios."},{"title":"Cirugía programada","desc":"Se realiza en uno de nuestros 2 quirófanos con anestesiólogo certificado."},{"title":"Recuperación y alta","desc":"Vigilancia posquirúrgica y plan de cuidados para tu recuperación en casa."}],
+        "faq": [{"q":"¿Hacen cirugía laparoscópica?","a":"Sí, la mayoría de cirugías abdominales las realizamos por laparoscopía cuando es posible."},{"q":"¿Tienen anestesiólogo propio?","a":"Sí, nuestros anestesiólogos certificados están presentes en todas las cirugías."},{"q":"¿Cuánto tiempo de recuperación tiene una cirugía?","a":"Depende del procedimiento. La cirugía laparoscópica permite una recuperación más rápida (2–5 días)."}]
+      },
+      "nutricion-clinica": {
+        "name": "Nutrición Clínica",
+        "desc": "Planes nutricionales personalizados integrados con el tratamiento médico.",
+        "full": "Nuestra nutrióloga diseña planes de alimentación personalizados basados en tu estado de salud, objetivos y preferencias. Trabajamos de la mano con el resto del equipo médico para un enfoque integral.",
+        "conditions": ["Control de peso (sobrepeso y obesidad)", "Diabetes y resistencia a la insulina", "Nutrición durante el embarazo y lactancia", "Enfermedades cardiovasculares", "Trastornos gastrointestinales", "Nutrición deportiva"],
+        "process": [{"title":"Evaluación nutricional","desc":"Bioimpedancia, medidas antropométricas y análisis de tu dieta actual."},{"title":"Plan personalizado","desc":"Recibes un plan de alimentación adaptado a tu estilo de vida y condición de salud."},{"title":"Seguimiento mensual","desc":"Revisamos tu evolución y ajustamos el plan según tus avances."}],
+        "faq": [{"q":"¿La nutrióloga trabaja con el médico?","a":"Sí, nuestro enfoque es multidisciplinario para resultados más efectivos."},{"q":"¿Cuántas consultas necesito?","a":"Recomendamos mínimo 3 consultas de seguimiento en los primeros 3 meses."},{"q":"¿Puedo seguir comiendo lo que me gusta?","a":"El plan se adapta a tus preferencias; no se trata de eliminar, sino de equilibrar."}]
+      },
+      "laboratorio-clinico": {
+        "name": "Laboratorio Clínico",
+        "desc": "Análisis clínicos propios con resultados el mismo día.",
+        "full": "Nuestro laboratorio clínico in-house procesa la mayoría de los estudios el mismo día. Sin necesidad de salir de la clínica: el médico solicita los estudios y tú los realizas aquí mismo, lo que agiliza tu diagnóstico y tratamiento.",
+        "conditions": ["Biometría hemática (BH) y química sanguínea", "Glucosa, colesterol y triglicéridos", "Examen general de orina", "Cultivos y antibiograma", "Prueba de embarazo", "Perfil tiroideo (T3, T4, TSH)"],
+        "process": [{"title":"Solicitud médica","desc":"Tu médico te indica los estudios necesarios según tu caso."},{"title":"Toma de muestra","desc":"Personal capacitado toma la muestra de sangre, orina u otro material."},{"title":"Resultados","desc":"La mayoría de estudios están listos en el mismo día; tu médico los interpreta."}],
+        "faq": [{"q":"¿Necesito venir en ayunas?","a":"Para estudios de glucosa, colesterol y química sanguínea sí (8–12 horas de ayuno)."},{"q":"¿En cuánto tiempo tengo mis resultados?","a":"Estudios básicos: 2–4 horas. Cultivos: 24–72 horas según el estudio."},{"q":"¿Puedo ir sin orden médica?","a":"Sí, algunos estudios de rutina los puedes solicitar directamente. Consúltanos."}]
+      },
+      "imagenologia": {
+        "name": "Imagenología",
+        "desc": "Ultrasonido y rayos X in situ para diagnóstico inmediato.",
+        "full": "Contamos con equipo de imagenología propio para ultrasonido y rayos X. Al tener estos estudios disponibles internamente, el tiempo de diagnóstico se reduce significativamente y el médico puede revisar los resultados de inmediato.",
+        "conditions": ["Ultrasonido abdominal y pélvico", "Ultrasonido obstétrico (embarazo)", "Ultrasonido mamario", "Radiografía de tórax, columna y extremidades", "Ultrasonido de tejidos blandos", "Estudios de seguimiento posquirúrgico"],
+        "process": [{"title":"Indicación médica","desc":"Tu médico indica el estudio de imagen y lo registramos en el sistema."},{"title":"Realización del estudio","desc":"Nuestro radiólogo o técnico realiza el ultrasonido o radiografía."},{"title":"Interpretación y reporte","desc":"El médico recibe el resultado e informe radiológico en el mismo día."}],
+        "faq": [{"q":"¿Se realizan ultrasonidos obstétricos en la clínica?","a":"Sí, es uno de los estudios más frecuentes que realizamos, ideal para el control prenatal."},{"q":"¿Necesito preparación especial?","a":"Para ultrasonido abdominal se recomienda ayuno de 4 horas. El obstétrico no requiere preparación especial."},{"q":"¿En cuánto tiempo tengo mi reporte?","a":"El médico revisará los resultados el mismo día, generalmente en 1–2 horas."}]
+      }
     }
   },
   "trustSignals": {
@@ -284,7 +341,36 @@
     "ctaTitle": "¿Tienes más preguntas?",
     "ctaDesc": "Nuestro equipo está disponible 24/7 para resolver cualquier duda.",
     "ctaContact": "Contactar ahora",
-    "ctaBook": "Agendar cita"
+    "ctaBook": "Agendar cita",
+    "cat1Items": [
+      {"q":"¿Necesito cita previa para ser atendido?","a":"Para consultas programadas con especialistas sí recomendamos agendar cita. Para urgencias atendemos de inmediato las 24 horas, los 365 días del año, sin necesidad de cita previa."},
+      {"q":"¿Cómo puedo agendar una cita?","a":"Puedes agendar por WhatsApp, llamando al (449) 000-0000, o usando el formulario en nuestra página de Citas. Confirmamos disponibilidad en minutos."},
+      {"q":"¿Cuánto tiempo dura una consulta?","a":"Una consulta estándar dura entre 20 y 30 minutos. Las consultas de primera vez o con estudios pueden extenderse más."},
+      {"q":"¿Puedo cancelar o cambiar mi cita?","a":"Sí. Te pedimos avisarnos con al menos 2 horas de anticipación para poder asignar el espacio a otro paciente."}
+    ],
+    "cat2Items": [
+      {"q":"¿Cuál es el horario de la clínica?","a":"Clínica Crystal está abierta las 24 horas del día, los 7 días de la semana, los 365 días del año. Urgencias siempre disponibles."},
+      {"q":"¿Tienen estacionamiento?","a":"Sí, contamos con estacionamiento propio para pacientes y visitantes sin costo adicional."},
+      {"q":"¿Tienen cafetería?","a":"Sí, contamos con cafetería y salas de estar en todos los niveles del edificio para mayor comodidad de pacientes y familiares."},
+      {"q":"¿Dónde están ubicados?","a":"Av. del Parque #348, Col. Jardines del Parque, CP 20276, Aguascalientes, Ags. Entre Av. del Lago y Av. Héroe de Nacozari."}
+    ],
+    "cat3Items": [
+      {"q":"¿Qué especialidades tienen disponibles?","a":"Contamos con Medicina General, Pediatría y Neonatología, Ginecología y Obstetricia, Cardiología, Cirugía General, Nutrición Clínica, Laboratorio Clínico e Imagenología."},
+      {"q":"¿Tienen laboratorio propio?","a":"Sí. Nuestro laboratorio clínico propio entrega resultados el mismo día en la mayoría de los estudios, sin necesidad de referirte a otra unidad."},
+      {"q":"¿Qué estudios de imagen realizan?","a":"Contamos con ultrasonido y rayos X. Los estudios se realizan e interpretan en la misma clínica."},
+      {"q":"¿Atienden partos y cesáreas?","a":"Sí. Contamos con 3 quirófanos exclusivos de maternidad y neonatólogos de guardia 24/7 para atender partos, cesáreas y recién nacidos de riesgo."}
+    ],
+    "cat4Items": [
+      {"q":"¿Aceptan seguros médicos?","a":"Actualmente atendemos principalmente a pacientes particulares. Contáctanos para verificar si tu aseguradora tiene convenio vigente con nosotros."},
+      {"q":"¿Cuáles son sus formas de pago?","a":"Aceptamos efectivo, tarjetas de débito y crédito. El costo de consulta y estudios se informa al momento de agendar."},
+      {"q":"¿Emiten facturas?","a":"Sí. Emitimos CFDI con nuestro RFC: CCR220517JW8. Solicítala al momento de pagar."}
+    ]
+  },
+  "doctors": {
+    "dra-sofia-torres": { "specialty": "Ginecología y Obstetricia" },
+    "dr-carlos-medina": { "specialty": "Pediatría y Neonatología" },
+    "dr-raul-herrera": { "specialty": "Cirugía General y Cardiología" },
+    "dra-mariana-villa": { "specialty": "Nutrición Clínica" }
   },
   "contactPage": {
     "eyebrow": "Estamos para servirte",

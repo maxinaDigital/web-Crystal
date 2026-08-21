@@ -32,6 +32,7 @@ export default async function ServicePage({ params }: { params: { slug: string }
   const tc = await getTranslations("common");
   const ts = await getTranslations("servicesSection");
   const tn = await getTranslations("nav");
+  const td = await getTranslations("doctors");
 
   const IconComponent =
     (LucideIcons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[service.icon] ??
@@ -58,6 +59,10 @@ export default async function ServicePage({ params }: { params: { slug: string }
   };
 
   const serviceName = ts(`items.${service.slug}.name`);
+  const fullDescription = ts(`items.${service.slug}.full`);
+  const conditions = ts.raw(`items.${service.slug}.conditions`) as string[];
+  const processSteps = ts.raw(`items.${service.slug}.process`) as { title: string; desc: string }[];
+  const faqItems = ts.raw(`items.${service.slug}.faq`) as { q: string; a: string }[];
 
   return (
     <>
@@ -84,7 +89,7 @@ export default async function ServicePage({ params }: { params: { slug: string }
                 <h1 className="font-heading text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
                   {serviceName}
                 </h1>
-                <p className="text-white/75 text-lg max-w-2xl">{service.fullDescription}</p>
+                <p className="text-white/75 text-lg max-w-2xl">{fullDescription}</p>
               </div>
             </div>
           </div>
@@ -99,7 +104,7 @@ export default async function ServicePage({ params }: { params: { slug: string }
                 {tc("conditions")}
               </h2>
               <ul className="space-y-3">
-                {service.conditions.map((c) => (
+                {conditions.map((c) => (
                   <li key={c} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-brand-muted">{c}</span>
@@ -109,20 +114,20 @@ export default async function ServicePage({ params }: { params: { slug: string }
             </div>
 
             {/* Proceso */}
-            {service.process.length > 0 && (
+            {processSteps.length > 0 && (
               <div>
                 <h2 className="font-heading text-2xl font-bold text-brand-text mb-6">
                   {tc("process")}
                 </h2>
                 <div className="space-y-4">
-                  {service.process.map((p) => (
-                    <div key={p.step} className="flex gap-4 p-5 rounded-xl bg-brand-bg border border-brand-border">
+                  {processSteps.map((p, i) => (
+                    <div key={i} className="flex gap-4 p-5 rounded-xl bg-brand-bg border border-brand-border">
                       <span className="w-8 h-8 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center flex-shrink-0">
-                        {p.step}
+                        {i + 1}
                       </span>
                       <div>
                         <p className="font-semibold text-brand-text">{p.title}</p>
-                        <p className="text-brand-muted text-sm mt-0.5">{p.description}</p>
+                        <p className="text-brand-muted text-sm mt-0.5">{p.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -131,20 +136,20 @@ export default async function ServicePage({ params }: { params: { slug: string }
             )}
 
             {/* FAQ */}
-            {service.faq.length > 0 && (
+            {faqItems.length > 0 && (
               <div>
                 <h2 className="font-heading text-2xl font-bold text-brand-text mb-6">
-                  Preguntas frecuentes
+                  {tc("faq")}
                 </h2>
                 <div className="space-y-4">
-                  {service.faq.map((f) => (
-                    <details key={f.question} className="group bg-brand-bg border border-brand-border rounded-xl overflow-hidden">
+                  {faqItems.map((f, i) => (
+                    <details key={i} className="group bg-brand-bg border border-brand-border rounded-xl overflow-hidden">
                       <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer font-medium text-brand-text list-none">
-                        {f.question}
+                        {f.q}
                         <ChevronRight className="w-4 h-4 text-brand-muted flex-shrink-0 group-open:rotate-90 transition-transform" />
                       </summary>
                       <p className="px-5 pb-5 text-brand-muted text-sm leading-relaxed">
-                        {f.answer}
+                        {f.a}
                       </p>
                     </details>
                   ))}
@@ -198,7 +203,7 @@ export default async function ServicePage({ params }: { params: { slug: string }
                         <p className="font-medium text-brand-text text-sm group-hover:text-primary transition-colors">
                           {d.name}
                         </p>
-                        <p className="text-brand-muted text-xs">{d.specialty}</p>
+                        <p className="text-brand-muted text-xs">{td(`${d.slug}.specialty`)}</p>
                       </div>
                     </Link>
                   ))}

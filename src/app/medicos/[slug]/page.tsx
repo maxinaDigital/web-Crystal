@@ -31,6 +31,8 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
   const tc = await getTranslations("common");
   const tn = await getTranslations("nav");
   const ta = await getTranslations("appointmentPage");
+  const td = await getTranslations("doctors");
+  const translatedSpecialty = td(`${doctor.slug}.specialty`);
 
   const relatedServices = services.filter((s) =>
     doctor.servicesSlugs.includes(s.slug)
@@ -71,7 +73,7 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
               </div>
               <div>
                 <p className="text-primary-light text-sm font-semibold uppercase tracking-widest mb-2">
-                  {doctor.specialty}
+                  {translatedSpecialty}
                 </p>
                 <h1 className="font-heading text-3xl md:text-4xl font-bold text-white mb-2">
                   {doctor.name}

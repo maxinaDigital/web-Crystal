@@ -40,33 +40,27 @@ export function Footer() {
             {t("tagline")}
           </p>
           <div className="flex items-center gap-3">
-            <a
-              href={CLINIC.social.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
               className="p-2 rounded-full bg-white/10 hover:bg-primary transition-colors"
-              aria-label="Facebook de Clínica Crystal (abre en nueva pestaña)"
+              aria-label="Facebook de Clínica Crystal"
             >
               <Share2 size={16} />
-            </a>
-            <a
-              href={CLINIC.social.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              type="button"
               className="p-2 rounded-full bg-white/10 hover:bg-primary transition-colors"
-              aria-label="Instagram de Clínica Crystal (abre en nueva pestaña)"
+              aria-label="Instagram de Clínica Crystal"
             >
               <Camera size={16} />
-            </a>
-            <a
-              href={CLINIC.social.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              type="button"
               className="p-2 rounded-full bg-white/10 hover:bg-primary transition-colors"
               aria-label="WhatsApp de Clínica Crystal"
             >
               <MessageCircle size={16} />
-            </a>
+            </button>
           </div>
         </div>
 

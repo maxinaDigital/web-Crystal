@@ -42,7 +42,8 @@
     "directCall": "Direct call",
     "howItWorksShort": "How does it work?",
     "howItWorksSteps": "1. Fill in your details\n2. Submit to open WhatsApp with your request\n3. Our team confirms your appointment in minutes",
-    "privacy": "required"
+    "privacy": "required",
+    "faq": "Frequently asked questions"
   },
   "hero": {
     "badge": "Private Clinic · Aguascalientes, Mexico",
@@ -82,14 +83,70 @@
     "titleAccent": "specialties",
     "description": "Everything under one roof. No referrals or unnecessary transfers.",
     "items": {
-      "medicina-general": { "name": "General Medicine", "desc": "Comprehensive medical consultation for the whole family." },
-      "pediatria-neonatologia": { "name": "Pediatrics & Neonatology", "desc": "Specialized care for babies and children, with a 24/7 neonatal unit." },
-      "ginecologia-obstetricia": { "name": "Gynecology & Obstetrics", "desc": "Prenatal care, natural deliveries, and C-sections in exclusive maternity ORs." },
-      "cardiologia": { "name": "Cardiology", "desc": "Diagnosis and treatment of heart and circulatory diseases." },
-      "cirugia-general": { "name": "General Surgery", "desc": "Surgical procedures including laparoscopy and minimally invasive techniques." },
-      "nutricion-clinica": { "name": "Clinical Nutrition", "desc": "Personalized nutrition plans integrated with medical treatment." },
-      "laboratorio-clinico": { "name": "Clinical Laboratory", "desc": "In-house lab tests with same-day results." },
-      "imagenologia": { "name": "Medical Imaging", "desc": "On-site ultrasound and X-ray for immediate diagnosis." }
+      "medicina-general": {
+        "name": "General Medicine",
+        "desc": "Comprehensive medical consultation for the whole family.",
+        "full": "Our general practitioners provide complete medical care for patients of all ages. From common illnesses to the monitoring of chronic conditions, we are here to take care of your health at every stage of life.",
+        "conditions": ["Colds, flu, and respiratory illnesses", "Infections and fever", "Muscle and joint pain", "Diabetes and hypertension management", "Preventive check-ups and annual exams", "Medical certificates"],
+        "process": [{"title":"Book your appointment","desc":"Via WhatsApp, phone, or our online form."},{"title":"Medical consultation","desc":"The doctor evaluates you, listens to your symptoms, and performs a physical exam."},{"title":"Diagnosis and plan","desc":"You receive your diagnosis, treatment, and follow-up instructions."}],
+        "faq": [{"q":"Do I need an appointment?","a":"Yes, we recommend booking to reduce wait times. We also handle emergencies."},{"q":"How long does a consultation last?","a":"Approximately 20–30 minutes depending on the reason for the visit."},{"q":"Do you see children?","a":"General Medicine sees patients 12 and older. For younger children, we have Pediatrics."}]
+      },
+      "pediatria-neonatologia": {
+        "name": "Pediatrics & Neonatology",
+        "desc": "Specialized care for babies and children, with a 24/7 neonatal unit.",
+        "full": "We have 3 exclusive maternity operating rooms and a team of highly trained pediatricians and neonatologists to accompany your baby from the very first moments of life. Our NICU provides top-level care for newborns who need special monitoring.",
+        "conditions": ["Care for healthy and at-risk newborns", "Well-child check-ups (ages 0–17)", "Pediatric respiratory illnesses", "Infections and fever in children", "Allergies and dermatitis", "Developmental monitoring"],
+        "process": [{"title":"Prenatal registration","desc":"We register you before delivery to prepare everything for your baby's arrival."},{"title":"Birth attendance","desc":"Our neonatologist receives the baby in the delivery room or operating room."},{"title":"Follow-up and discharge","desc":"We check the baby and teach you the care routines before going home."}],
+        "faq": [{"q":"Do you have a NICU?","a":"Yes, we have a neonatal care unit for premature or at-risk newborns."},{"q":"Can I choose the pediatrician for my baby?","a":"Yes, you can request a preferred doctor when registering your pregnancy with us."},{"q":"What ages does the pediatrician see?","a":"From birth through 17 years."}]
+      },
+      "ginecologia-obstetricia": {
+        "name": "Gynecology & Obstetrics",
+        "desc": "Prenatal care, natural deliveries, and C-sections in exclusive maternity ORs.",
+        "full": "Our gynecologists accompany women at every stage: from adolescence through menopause. With three exclusive maternity operating rooms and in-house imaging technology, we provide complete care throughout pregnancy, delivery, and postpartum.",
+        "conditions": ["Prenatal care and pregnancy monitoring", "Natural delivery and scheduled C-section", "Pap smear and cervical cancer screening", "Menstrual disorders", "Contraception and family planning", "Menopause and perimenopause"],
+        "process": [{"title":"First consultation","desc":"Full evaluation, medical history, and initial tests if needed."},{"title":"Prenatal monitoring","desc":"Monthly visits (or according to gestational week) with included ultrasound."},{"title":"Delivery or C-section","desc":"Care in our maternity operating rooms with the full team."}],
+        "faq": [{"q":"Do you handle emergency deliveries?","a":"Yes, we have 24-hour obstetric on-call coverage for emergencies."},{"q":"Is the obstetric ultrasound done at the clinic?","a":"Yes, we have our own imaging unit — no need to go elsewhere."},{"q":"Can my partner be present at the delivery?","a":"Yes, we allow a support person during vaginal delivery and recovery."}]
+      },
+      "cardiologia": {
+        "name": "Cardiology",
+        "desc": "Diagnosis and treatment of heart and circulatory diseases.",
+        "full": "Our cardiologist performs comprehensive evaluations of the cardiovascular system, including electrocardiograms, echocardiograms, and stress tests. Timely diagnosis can save lives.",
+        "conditions": ["Arterial hypertension", "Cardiac arrhythmias", "Heart failure", "Chest pain and palpitations", "Cardiovascular risk management", "Post-heart attack follow-up"],
+        "process": [{"title":"Initial consultation","desc":"Medical history, exam, and electrocardiogram in the same visit."},{"title":"Additional studies","desc":"Echocardiogram or stress test as needed, performed at our clinic."},{"title":"Treatment plan","desc":"Medication adjustment, lifestyle changes, and follow-up appointments."}],
+        "faq": [{"q":"Is the echocardiogram done at the clinic?","a":"Yes, we perform it with our in-house imaging equipment."},{"q":"When should I go to cardiac emergency?","a":"For chest pain, difficulty breathing, or fainting, seek care immediately."},{"q":"How often should I have a heart check-up?","a":"An annual check is recommended from age 40, or earlier if risk factors are present."}]
+      },
+      "cirugia-general": {
+        "name": "General Surgery",
+        "desc": "Surgical procedures including laparoscopy and minimally invasive techniques.",
+        "full": "We have 2 fully equipped general surgery operating rooms with state-of-the-art technology. Our surgical team handles everything from minor procedures to complex surgeries, following international safety standards.",
+        "conditions": ["Appendicitis", "Inguinal, umbilical, and abdominal hernia", "Cholecystitis (gallstones)", "Laparoscopic surgery (minimally invasive)", "Skin procedures (cysts, lipomas)", "Emergency surgery"],
+        "process": [{"title":"Pre-operative assessment","desc":"The surgeon evaluates the case and orders the necessary lab and imaging studies."},{"title":"Scheduled surgery","desc":"Performed in one of our 2 operating rooms with a certified anesthesiologist."},{"title":"Recovery and discharge","desc":"Post-surgical monitoring and a care plan for your recovery at home."}],
+        "faq": [{"q":"Do you perform laparoscopic surgery?","a":"Yes, most abdominal surgeries are performed laparoscopically when possible."},{"q":"Do you have your own anesthesiologist?","a":"Yes, our certified anesthesiologists are present at every surgery."},{"q":"How long is the recovery after surgery?","a":"It depends on the procedure. Laparoscopic surgery allows faster recovery (2–5 days)."}]
+      },
+      "nutricion-clinica": {
+        "name": "Clinical Nutrition",
+        "desc": "Personalized nutrition plans integrated with medical treatment.",
+        "full": "Our nutritionist designs personalized eating plans based on your health status, goals, and preferences. We work closely with the rest of the medical team for a comprehensive approach.",
+        "conditions": ["Weight management (overweight and obesity)", "Diabetes and insulin resistance", "Pregnancy and breastfeeding nutrition", "Cardiovascular disease", "Gastrointestinal disorders", "Sports nutrition"],
+        "process": [{"title":"Nutritional assessment","desc":"Bioimpedance, anthropometric measurements, and analysis of your current diet."},{"title":"Personalized plan","desc":"You receive an eating plan tailored to your lifestyle and health condition."},{"title":"Monthly follow-up","desc":"We review your progress and adjust the plan based on your results."}],
+        "faq": [{"q":"Does the nutritionist work with the doctor?","a":"Yes, our approach is multidisciplinary for more effective results."},{"q":"How many consultations do I need?","a":"We recommend at least 3 follow-up visits in the first 3 months."},{"q":"Can I keep eating foods I enjoy?","a":"The plan adapts to your preferences — it's about balancing, not eliminating."}]
+      },
+      "laboratorio-clinico": {
+        "name": "Clinical Laboratory",
+        "desc": "In-house lab tests with same-day results.",
+        "full": "Our in-house clinical laboratory processes most tests the same day. No need to leave the clinic: the doctor orders the tests and you have them done right here, speeding up your diagnosis and treatment.",
+        "conditions": ["Complete blood count and blood chemistry", "Glucose, cholesterol, and triglycerides", "Urinalysis", "Cultures and antibiogram", "Pregnancy test", "Thyroid panel (T3, T4, TSH)"],
+        "process": [{"title":"Doctor's order","desc":"Your doctor specifies the tests needed for your case."},{"title":"Sample collection","desc":"Trained staff collects the blood, urine, or other sample."},{"title":"Results","desc":"Most tests are ready the same day; your doctor reviews and interprets them."}],
+        "faq": [{"q":"Do I need to fast?","a":"For glucose, cholesterol, and blood chemistry tests, yes (8–12 hours of fasting)."},{"q":"How quickly will I get my results?","a":"Basic tests: 2–4 hours. Cultures: 24–72 hours depending on the study."},{"q":"Can I request tests without a doctor's order?","a":"Yes, some routine tests can be requested directly. Ask us which ones."}]
+      },
+      "imagenologia": {
+        "name": "Medical Imaging",
+        "desc": "On-site ultrasound and X-ray for immediate diagnosis.",
+        "full": "We have our own imaging equipment for ultrasound and X-ray. Having these studies available in-house significantly reduces diagnostic time, and the doctor can review results immediately.",
+        "conditions": ["Abdominal and pelvic ultrasound", "Obstetric ultrasound (pregnancy)", "Breast ultrasound", "Chest, spine, and extremity X-ray", "Soft tissue ultrasound", "Post-surgical follow-up imaging"],
+        "process": [{"title":"Doctor's order","desc":"Your doctor orders the imaging study and it is entered into the system."},{"title":"Performing the study","desc":"Our radiologist or technician performs the ultrasound or X-ray."},{"title":"Interpretation and report","desc":"The doctor receives the result and radiology report the same day."}],
+        "faq": [{"q":"Are obstetric ultrasounds done at the clinic?","a":"Yes, it is one of the most frequent studies we perform, ideal for prenatal care."},{"q":"Do I need any special preparation?","a":"For abdominal ultrasound, a 4-hour fast is recommended. Obstetric ultrasound requires no special preparation."},{"q":"How long until I get my report?","a":"The doctor will review the results the same day, usually within 1–2 hours."}]
+      }
     }
   },
   "trustSignals": {
@@ -284,7 +341,36 @@
     "ctaTitle": "Have more questions?",
     "ctaDesc": "Our team is available 24/7 to answer any questions.",
     "ctaContact": "Contact us now",
-    "ctaBook": "Book appointment"
+    "ctaBook": "Book appointment",
+    "cat1Items": [
+      {"q":"Do I need an appointment?","a":"For scheduled specialist visits, we recommend booking in advance. For emergencies, we attend immediately 24 hours a day, 365 days a year, with no appointment needed."},
+      {"q":"How can I book an appointment?","a":"You can book via WhatsApp, by calling (449) 000-0000, or using the form on our Appointments page. We confirm availability in minutes."},
+      {"q":"How long does a consultation last?","a":"A standard consultation lasts 20–30 minutes. First-time visits or those requiring tests may take longer."},
+      {"q":"Can I cancel or reschedule my appointment?","a":"Yes. We ask that you notify us at least 2 hours in advance so we can offer the slot to another patient."}
+    ],
+    "cat2Items": [
+      {"q":"What are the clinic's hours?","a":"Clínica Crystal is open 24 hours a day, 7 days a week, 365 days a year. Emergency care is always available."},
+      {"q":"Is there parking available?","a":"Yes, we have our own free parking lot for patients and visitors."},
+      {"q":"Is there a cafeteria?","a":"Yes, we have a cafeteria and lounge areas on every floor of the building for the comfort of patients and families."},
+      {"q":"Where are you located?","a":"Av. del Parque #348, Col. Jardines del Parque, CP 20276, Aguascalientes, Ags. Between Av. del Lago and Av. Héroe de Nacozari."}
+    ],
+    "cat3Items": [
+      {"q":"What specialties do you offer?","a":"We offer General Medicine, Pediatrics & Neonatology, Gynecology & Obstetrics, Cardiology, General Surgery, Clinical Nutrition, Clinical Laboratory, and Medical Imaging."},
+      {"q":"Do you have your own laboratory?","a":"Yes. Our in-house clinical laboratory delivers same-day results for most tests, with no need for an outside referral."},
+      {"q":"What imaging studies do you perform?","a":"We offer ultrasound and X-ray. Studies are performed and interpreted right here at the clinic."},
+      {"q":"Do you handle deliveries and C-sections?","a":"Yes. We have 3 exclusive maternity operating rooms and neonatologists on call 24/7 for deliveries, C-sections, and at-risk newborns."}
+    ],
+    "cat4Items": [
+      {"q":"Do you accept health insurance?","a":"We currently serve primarily private-pay patients. Contact us to verify whether your insurer has a current agreement with us."},
+      {"q":"What payment methods do you accept?","a":"We accept cash, debit, and credit cards. Consultation and test fees are shared when you book."},
+      {"q":"Do you issue invoices?","a":"Yes. We issue electronic invoices (CFDI) under RFC: CCR220517JW8. Request yours at the time of payment."}
+    ]
+  },
+  "doctors": {
+    "dra-sofia-torres": { "specialty": "Gynecology & Obstetrics" },
+    "dr-carlos-medina": { "specialty": "Pediatrics & Neonatology" },
+    "dr-raul-herrera": { "specialty": "General Surgery & Cardiology" },
+    "dra-mariana-villa": { "specialty": "Clinical Nutrition" }
   },
   "contactPage": {
     "eyebrow": "We're here to help",

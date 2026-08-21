@@ -20,6 +20,7 @@ const FADE_UP = {
 export function TeamPreview() {
   const t = useTranslations("teamSection");
   const tc = useTranslations("common");
+  const td = useTranslations("doctors");
   const featured = doctors.slice(0, 4);
 
   return (
@@ -57,13 +58,13 @@ export function TeamPreview() {
 
                 <div className="p-5">
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">
-                    {doctor.specialty}
+                    {td(`${doctor.slug}.specialty`)}
                   </p>
                   <h3 className="font-heading text-lg font-semibold text-brand-text leading-tight group-hover:text-primary transition-colors">
                     {doctor.name}
                   </h3>
                   <p className="mt-2 text-sm text-brand-muted line-clamp-2">
-                    {doctor.bio.split(".")[0]}.
+                    {doctor.bio}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary">
                     {tc("viewProfile")} <ChevronRight className="w-4 h-4" />

@@ -8,46 +8,17 @@ export const metadata: Metadata = {
     "Resolvemos tus dudas sobre citas, servicios, horarios y atención en Clínica Crystal, clínica privada 24/7 en Aguascalientes.",
 };
 
-const FAQS = [
-  {
-    catKey: "cat1",
-    items: [
-      { q: "¿Necesito cita previa para ser atendido?", a: "Para consultas programadas con especialistas sí recomendamos agendar cita. Para urgencias atendemos de inmediato las 24 horas, los 365 días del año, sin necesidad de cita previa." },
-      { q: "¿Cómo puedo agendar una cita?", a: "Puedes agendar por WhatsApp, llamando al (449) 000-0000, o usando el formulario en nuestra página de Citas. Confirmamos disponibilidad en minutos." },
-      { q: "¿Cuánto tiempo dura una consulta?", a: "Una consulta estándar dura entre 20 y 30 minutos. Las consultas de primera vez o con estudios pueden extenderse más." },
-      { q: "¿Puedo cancelar o cambiar mi cita?", a: "Sí. Te pedimos avisarnos con al menos 2 horas de anticipación para poder asignar el espacio a otro paciente." },
-    ],
-  },
-  {
-    catKey: "cat2",
-    items: [
-      { q: "¿Cuál es el horario de la clínica?", a: "Clínica Crystal está abierta las 24 horas del día, los 7 días de la semana, los 365 días del año. Urgencias siempre disponibles." },
-      { q: "¿Tienen estacionamiento?", a: "Sí, contamos con estacionamiento propio para pacientes y visitantes sin costo adicional." },
-      { q: "¿Tienen cafetería?", a: "Sí, contamos con cafetería y salas de estar en todos los niveles del edificio para mayor comodidad de pacientes y familiares." },
-      { q: "¿Dónde están ubicados?", a: "Av. del Parque #348, Col. Jardines del Parque, CP 20276, Aguascalientes, Ags. Entre Av. del Lago y Av. Héroe de Nacozari." },
-    ],
-  },
-  {
-    catKey: "cat3",
-    items: [
-      { q: "¿Qué especialidades tienen disponibles?", a: "Contamos con Medicina General, Pediatría y Neonatología, Ginecología y Obstetricia, Cardiología, Cirugía General, Nutrición Clínica, Laboratorio Clínico e Imagenología." },
-      { q: "¿Tienen laboratorio propio?", a: "Sí. Nuestro laboratorio clínico propio entrega resultados el mismo día en la mayoría de los estudios, sin necesidad de referirte a otra unidad." },
-      { q: "¿Qué estudios de imagen realizan?", a: "Contamos con ultrasonido y rayos X. Los estudios se realizan e interpretan en la misma clínica." },
-      { q: "¿Atienden partos y cesáreas?", a: "Sí. Contamos con 3 quirófanos exclusivos de maternidad y neonatólogos de guardia 24/7 para atender partos, cesáreas y recién nacidos de riesgo." },
-    ],
-  },
-  {
-    catKey: "cat4",
-    items: [
-      { q: "¿Aceptan seguros médicos?", a: "Actualmente atendemos principalmente a pacientes particulares. Contáctanos para verificar si tu aseguradora tiene convenio vigente con nosotros." },
-      { q: "¿Cuáles son sus formas de pago?", a: "Aceptamos efectivo, tarjetas de débito y crédito. El costo de consulta y estudios se informa al momento de agendar." },
-      { q: "¿Emiten facturas?", a: "Sí. Emitimos CFDI con nuestro RFC: CCR220517JW8. Solicítala al momento de pagar." },
-    ],
-  },
-];
+type FaqItem = { q: string; a: string };
 
 export default async function PreguntasFrecuentesPage() {
   const t = await getTranslations("faqPage");
+
+  const FAQS = [
+    { catKey: "cat1" as const, items: t.raw("cat1Items") as FaqItem[] },
+    { catKey: "cat2" as const, items: t.raw("cat2Items") as FaqItem[] },
+    { catKey: "cat3" as const, items: t.raw("cat3Items") as FaqItem[] },
+    { catKey: "cat4" as const, items: t.raw("cat4Items") as FaqItem[] },
+  ];
 
   return (
     <main className="pt-16 md:pt-[calc(2rem+4rem)]">

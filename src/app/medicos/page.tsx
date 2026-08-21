@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 export default async function MedicosPage() {
   const t = await getTranslations("doctorsPage");
   const tc = await getTranslations("common");
+  const td = await getTranslations("doctors");
 
   return (
     <main className="pt-16 md:pt-[calc(2rem+4rem)]">
@@ -55,14 +56,14 @@ export default async function MedicosPage() {
                 </div>
                 <div className="p-6">
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">
-                    {doctor.specialty}
+                    {td(`${doctor.slug}.specialty`)}
                   </p>
                   <h2 className="font-heading text-xl font-semibold text-brand-text mb-1 group-hover:text-primary transition-colors">
                     {doctor.name}
                   </h2>
                   <p className="text-brand-muted text-xs mb-3">{tc("cedula")}: {doctor.cedula}</p>
                   <p className="text-brand-muted text-sm leading-relaxed line-clamp-2 mb-4">
-                    {doctor.bio.split(".")[0]}.
+                    {doctor.bio}
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
                     {tc("viewProfile")} <ChevronRight className="w-4 h-4" />

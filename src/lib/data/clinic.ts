@@ -16,9 +16,9 @@ export const CLINIC = {
     between: "entre Av. del Lago y Av. Héroe de Nacozari",
     full: "Av. del Parque #348, Col. Jardines del Parque, CP 20276, Aguascalientes, Ags.",
     googleMapsUrl:
-      "https://maps.google.com/?q=Av.+del+Parque+348,+Jardines+del+Parque,+Aguascalientes",
+      "https://www.google.com/maps/search/Av.+del+Parque+%23348,+Col.+Jardines+del+Parque,+CP+20276,+Aguascalientes,+Ags.,+M%C3%A9xico",
     googleMapsEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.5!2d-102.2!3d21.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDUyJzQ4LjAiTiAxMDLCsDEyJzAwLjAiVw!5e0!3m2!1ses!2smx!4v1700000000000",
+      "https://maps.google.com/maps?q=Av.+del+Parque+%23348,+Col.+Jardines+del+Parque,+CP+20276,+Aguascalientes,+Ags.,+M%C3%A9xico&output=embed&hl=es",
   },
   hours: [
     { days: "Lunes – Domingo", hours: "Abierto 24 horas" },
