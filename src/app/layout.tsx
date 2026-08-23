@@ -35,10 +35,6 @@ export const metadata: Metadata = {
     "imagenología",
     "laboratorio clínico",
   ],
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/images/diamante.png",
-  },
   openGraph: {
     type: "website",
     locale: "es_MX",
