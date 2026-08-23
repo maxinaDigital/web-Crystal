@@ -24,11 +24,11 @@ export function Logo({ className = "", iconSize = 44 }: LogoProps) {
         className="object-contain shrink-0"
       />
       <span
-        className="font-heading leading-none whitespace-nowrap"
-        style={{ fontSize: iconSize * 0.5 }}
+        className="font-sans leading-none whitespace-nowrap uppercase"
+        style={{ fontSize: iconSize * 0.4 }}
       >
-        <span className="text-brand-muted">Clínica </span>
-        <span className="font-semibold tracking-wide text-primary">CRYSTAL</span>
+        <span className="font-medium tracking-wide text-brand-muted">Clínica </span>
+        <span className="font-bold tracking-wide text-primary">Crystal</span>
       </span>
     </Link>
   );
