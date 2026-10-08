@@ -7,6 +7,7 @@ import { CheckCircle2, ChevronRight, MessageCircle } from "lucide-react";
 import { services, getServiceBySlug } from "@/lib/data/services";
 import { doctors } from "@/lib/data/doctors";
 import { CLINIC } from "@/lib/data/clinic";
+import { jsonLdHtml } from "@/lib/jsonLd";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -68,7 +69,7 @@ export default async function ServicePage({ params }: { params: { slug: string }
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
       />
       <main className="pt-16 md:pt-[calc(2rem+4rem)]">
         {/* Hero */}

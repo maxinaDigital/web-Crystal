@@ -5,6 +5,7 @@ import { getMessages, getLocale } from "next-intl/server";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { jsonLdHtml } from "@/lib/jsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -90,7 +91,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
         />
       </head>
       <body className="antialiased">

@@ -6,6 +6,7 @@ import { User, GraduationCap, Clock, CheckCircle2, MessageCircle, ChevronRight }
 import { doctors, getDoctorBySlug } from "@/lib/data/doctors";
 import { services } from "@/lib/data/services";
 import { CLINIC } from "@/lib/data/clinic";
+import { jsonLdHtml } from "@/lib/jsonLd";
 
 export function generateStaticParams() {
   return doctors.map((d) => ({ slug: d.slug }));
@@ -54,7 +55,7 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
       />
       <main className="pt-16 md:pt-[calc(2rem+4rem)]">
         {/* Hero */}
