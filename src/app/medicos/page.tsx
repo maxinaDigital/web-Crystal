@@ -17,7 +17,7 @@ export default async function MedicosPage() {
   const td = await getTranslations("doctors");
 
   return (
-    <main className="pt-16 md:pt-[calc(2rem+4rem)]">
+    <div>
       {/* Hero */}
       <section className="py-16 bg-gradient-to-br from-[#0a4a5a] to-[#1a9090]">
         <div className="max-w-4xl mx-auto px-4 text-center">
@@ -74,6 +74,6 @@ export default async function MedicosPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

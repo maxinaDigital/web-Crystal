@@ -57,7 +57,7 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLdHtml(jsonLd) }}
       />
-      <main className="pt-16 md:pt-[calc(2rem+4rem)]">
+      <div>
         {/* Hero */}
         <section className="py-16 bg-gradient-to-br from-[#0a4a5a] to-[#1a9090]">
           <div className="max-w-5xl mx-auto px-4">
@@ -192,7 +192,7 @@ export default async function DoctorPage({ params }: { params: { slug: string } 
             )}
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 }
